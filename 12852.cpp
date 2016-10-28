@@ -26,7 +26,7 @@ int main(int agrc, char **agrv){
     assert(n == a);
     for (int i=0; i<yourans; i++) {
         assert(fscanf(out,"%d",&b)==1);
-        assert(a-1 == b || a/2 == b || a/3 == b);
+        assert(a-1 == b || (a%2 == 0 && a/2 == b) || (a%3 == 0 && a/3 == b));
         a=b;
     }
     assert(a==1);
