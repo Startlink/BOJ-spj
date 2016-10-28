@@ -18,4 +18,4 @@ int main(int agrc, char **agrv){
 
 Pull Request를 이용해서 보내주세요.
 
-첨부되어 있는 12852.cpp는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
+첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
