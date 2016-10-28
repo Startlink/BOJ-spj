@@ -64,3 +64,5 @@ Pull Request를 이용해서 보내주세요.
 * [Maze](https://www.acmicpc.net/10005)
 * [Squarks](https://www.acmicpc.net/8230)
 * [Warehouse Store](https://www.acmicpc.net/8234)
+* [Unique Encryption Keys](https://www.acmicpc.net/problem/3418)
+* [Primonimo](https://www.acmicpc.net/problem/13296)
