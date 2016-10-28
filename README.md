@@ -8,10 +8,10 @@
 #include <cstdio>
 #include <cassert>
 using namespace std;
-int main(int agrc, char **agrv){
-    FILE *in = fopen(agrv[1],"r");
-    FILE *sol = fopen(agrv[2],"r");
-    FILE *out = fopen(agrv[3],"r");
+int main(int agrc, char **argv){
+    FILE *in = fopen(argv[1],"r");
+    FILE *sol = fopen(argv[2],"r");
+    FILE *out = fopen(argv[3],"r");
     return 0;
 }
 ```
