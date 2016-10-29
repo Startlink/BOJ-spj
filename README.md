@@ -31,7 +31,6 @@ Pull Request를 이용해서 보내주세요.
 * [Sophie](https://www.acmicpc.net/problem/8137)
 * [The Postman](https://www.acmicpc.net/problem/8130)
 * [Rock Garden](https://www.acmicpc.net/problem/8144)
-* [Tetris Attack](https://www.acmicpc.net/problem/8146)
 * [Motorways](https://www.acmicpc.net/problem/8003)
 * [Railway](https://www.acmicpc.net/problem/8147)
 * [Building Blocks](https://www.acmicpc.net/problem/8151)
