@@ -29,7 +29,6 @@ Pull Request를 이용해서 보내주세요.
 * [City Tour](https://www.acmicpc.net/problem/8038)
 * [Mastermind II](https://www.acmicpc.net/problem/8002)
 * [Mirror Trap](https://www.acmicpc.net/problem/7972)
-* [Dicing](https://www.acmicpc.net/problem/7965)
 * [Sophie](https://www.acmicpc.net/problem/8137)
 * [Warehouse](https://www.acmicpc.net/problem/8126)
 * [The Postman](https://www.acmicpc.net/problem/8130)
