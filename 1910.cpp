@@ -28,6 +28,7 @@ int main(int agrc, char **agrv){
 		assert(chk[t] == 0);
 		chk[t] = 1;
 	}
+	int cnt = 0;
 	for(int i=1; i<=n; i++){
 		for(auto &j : gph[i]){
 			if(chk[i] == chk[j]) cnt++;
