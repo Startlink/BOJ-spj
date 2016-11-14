@@ -63,3 +63,5 @@ Pull Request를 이용해서 보내주세요.
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
 * [Soccer League](https://www.acmicpc.net/problem/5741)
+* [Jetpack](https://www.acmicpc.net/problem/13485)
+* [Cezar](https://www.acmicpc.net/problem/13486)
