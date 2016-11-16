@@ -62,9 +62,10 @@ int main(int agrc, char **agrv){
 			assert(w > 2 && w % 2 == 1 && miller_rabin::isprime(w) && s.find(w) == s.end());
 			s.insert(w);
 		}
-		assert(ret == w);
+		assert(ret == tci[i]);
 	}
 	fclose(in);
 	fclose(sol);
 	fclose(out);
 }
+
