@@ -22,7 +22,6 @@ Pull Request를 이용해서 보내주세요.
  
 ## 문제 목록
 
-* [Weaker Goldbach](https://www.acmicpc.net/problem/8031)
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
 * [Balance](https://www.acmicpc.net/problem/8023)
@@ -58,7 +57,6 @@ Pull Request를 이용해서 보내주세요.
 * [Maze](https://www.acmicpc.net/problem/10005)
 * [Squarks](https://www.acmicpc.net/problem/8230)
 * [Warehouse Store](https://www.acmicpc.net/problem/8234)
-* [Unique Encryption Keys](https://www.acmicpc.net/problem/3418)
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
