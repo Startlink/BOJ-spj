@@ -66,3 +66,4 @@ Pull Request를 이용해서 보내주세요.
 * [Prosječni](https://www.acmicpc.net/problem/13720)
 * [Pub crawl](https://www.acmicpc.net/problem/13862)
 * [Kiwi Trees](https://www.acmicpc.net/problem/13938)
+* [Excursion](https://www.acmicpc.net/problem/8532)
