@@ -22,7 +22,6 @@ Pull Request를 이용해서 보내주세요.
  
 ## 문제 목록
 
-* [Weaker Goldbach](https://www.acmicpc.net/problem/8031)
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
 * [Balance](https://www.acmicpc.net/problem/8023)
@@ -46,7 +45,6 @@ Pull Request를 이용해서 보내주세요.
 * [The Walk of Bytie-boy](https://www.acmicpc.net/problem/8175)
 * [Island](https://www.acmicpc.net/problem/8182)
 * [Ticket Inspector](https://www.acmicpc.net/problem/8176)
-* [Party](https://www.acmicpc.net/problem/8214)
 * [Sticks](https://www.acmicpc.net/problem/8218)
 * [Programming Contest](https://www.acmicpc.net/problem/8219)
 * [Plot](https://www.acmicpc.net/problem/8206)
@@ -59,10 +57,13 @@ Pull Request를 이용해서 보내주세요.
 * [Maze](https://www.acmicpc.net/problem/10005)
 * [Squarks](https://www.acmicpc.net/problem/8230)
 * [Warehouse Store](https://www.acmicpc.net/problem/8234)
-* [Unique Encryption Keys](https://www.acmicpc.net/problem/3418)
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
-* [Soccer League](https://www.acmicpc.net/problem/5741)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Cezar](https://www.acmicpc.net/problem/13486)
 * [Dr Who’s Banquet](https://www.acmicpc.net/problem/11421)
+* [Crushing Confections](https://www.acmicpc.net/problem/11343)
+* [Prosječni](https://www.acmicpc.net/problem/13720)
+* [Pub crawl](https://www.acmicpc.net/problem/13862)
+* [Kiwi Trees](https://www.acmicpc.net/problem/13938)
+* [Excursion](https://www.acmicpc.net/problem/8532)
