@@ -6,6 +6,7 @@
 #include <vector>
 #include <queue>
 #include <utility>
+#include <stdexcept>
 using namespace std;
 
 int n;
