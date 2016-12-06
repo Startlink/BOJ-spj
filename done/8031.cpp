@@ -7,7 +7,7 @@ int tc, tci[55];
 namespace miller_rabin{
 	lint mul(lint a, lint b, lint p){
 		lint ret = 0;
-		while(b){
+		while(a){
 			if(a&1) ret = (ret + b) % p;
 			a >>= 1;
 			b = (b << 1) % p;
@@ -62,9 +62,10 @@ int main(int agrc, char **agrv){
 			assert(w > 2 && w % 2 == 1 && miller_rabin::isprime(w) && s.find(w) == s.end());
 			s.insert(w);
 		}
-		assert(ret == w);
+		assert(ret == tci[i]);
 	}
 	fclose(in);
 	fclose(sol);
 	fclose(out);
 }
+
