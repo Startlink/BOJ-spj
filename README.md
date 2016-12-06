@@ -62,3 +62,8 @@ Pull Request를 이용해서 보내주세요.
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Cezar](https://www.acmicpc.net/problem/13486)
 * [Dr Who’s Banquet](https://www.acmicpc.net/problem/11421)
+* [Crushing Confections](https://www.acmicpc.net/problem/11343)
+* [Prosječni](https://www.acmicpc.net/problem/13720)
+* [Pub crawl](https://www.acmicpc.net/problem/13862)
+* [Kiwi Trees](https://www.acmicpc.net/problem/13938)
+* [Excursion](https://www.acmicpc.net/problem/8532)
