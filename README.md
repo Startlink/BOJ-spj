@@ -72,3 +72,6 @@ Pull Request를 이용해서 보내주세요.
 * [Tiling Polygons](https://www.acmicpc.net/problem/13852)
 * [Hyperloop](https://www.acmicpc.net/problem/14086)
 * [RAM](https://www.acmicpc.net/problem/14090)
+* [Sličice](https://www.acmicpc.net/problem/14133)
+* [Filtar](https://www.acmicpc.net/problem/14138)
+* [Binarni](https://www.acmicpc.net/problem/14156)
