@@ -76,3 +76,5 @@ Pull Request를 이용해서 보내주세요.
 * [Filtar](https://www.acmicpc.net/problem/14138)
 * [Binarni](https://www.acmicpc.net/problem/14156)
 * [Rekonstruiraj](https://www.acmicpc.net/problem/14212)
+* [Password Security (Small1)](https://www.acmicpc.net/problem/12040)
+* [Password Security (Small2)](https://www.acmicpc.net/problem/12041)
