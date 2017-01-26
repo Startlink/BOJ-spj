@@ -36,9 +36,9 @@ int main(int agrc, char **agrv){
 	for(auto &j : off){
 		fscanf(sol, "%d", &j);
 	}
-	vector<int> usr(t);
 	assert(fscanf(out, "%d", &t) == 1);
 	assert(t >= 2 && t <= m);
+	vector<int> usr(t);
 	for(auto &j : usr){
 		assert(fscanf(out, "%d", &j) == 1);
 		assert(1 <= j && j <= n);
