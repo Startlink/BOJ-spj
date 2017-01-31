@@ -74,3 +74,5 @@ Pull Request를 이용해서 보내주세요.
 * [Rekonstruiraj](https://www.acmicpc.net/problem/14212)
 * [Password Security (Small1)](https://www.acmicpc.net/problem/12040)
 * [Password Security (Small2)](https://www.acmicpc.net/problem/12041)
+* [Minesweeper Master (Small)](https://www.acmicpc.net/problem/12262)
+* [Minesweeper Master (Large)](https://www.acmicpc.net/problem/12263)
