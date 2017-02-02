@@ -82,3 +82,5 @@ Pull Request를 이용해서 보내주세요.
 * [Pogo (Large)](https://www.acmicpc.net/problem/12320)
 * [Aerobics (Small)])(https://www.acmicpc.net/problem/12376)
 * [Aerobics (Large)])(https://www.acmicpc.net/problem/12377)
+* [Mountain View (Small)](https://www.acmicpc.net/problem/12378)
+* [Mountain View (Large)](https://www.acmicpc.net/problem/12379)
