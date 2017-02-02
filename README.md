@@ -84,3 +84,5 @@ Pull Request를 이용해서 보내주세요.
 * [Aerobics (Large)])(https://www.acmicpc.net/problem/12377)
 * [Mountain View (Small)](https://www.acmicpc.net/problem/12378)
 * [Mountain View (Large)](https://www.acmicpc.net/problem/12379)
+* [Equal Sums (Small)])(https://www.acmicpc.net/problem/12392)
+* [Equal Sums (Large)])(https://www.acmicpc.net/problem/12393)
