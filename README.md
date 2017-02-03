@@ -86,3 +86,5 @@ Pull Request를 이용해서 보내주세요.
 * [Mountain View (Large)](https://www.acmicpc.net/problem/12379)
 * [Equal Sums (Small)])(https://www.acmicpc.net/problem/12392)
 * [Equal Sums (Large)])(https://www.acmicpc.net/problem/12393)
+* [Technology Planning (Small1)])(https://www.acmicpc.net/problem/12413)
+* [Technology Planning (Small2)])(https://www.acmicpc.net/problem/12414)
