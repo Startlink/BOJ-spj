@@ -88,3 +88,5 @@ Pull Request를 이용해서 보내주세요.
 * [Equal Sums (Large)])(https://www.acmicpc.net/problem/12393)
 * [Technology Planning (Small1)])(https://www.acmicpc.net/problem/12413)
 * [Technology Planning (Small2)])(https://www.acmicpc.net/problem/12414)
+* [House of Kittens (Small)](https://www.acmicpc.net/problem/12501)
+* [House of Kittens (Large)](https://www.acmicpc.net/problem/12502)
