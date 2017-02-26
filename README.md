@@ -92,3 +92,4 @@ Pull Request를 이용해서 보내주세요.
 * [House of Kittens (Large)](https://www.acmicpc.net/problem/12502)
 * [Pareto](https://www.acmicpc.net/problem/14410)
 * [Strelice](https://www.acmicpc.net/problem/14414)
+* [Prosječni](https://www.acmicpc.net/problem/13720)
