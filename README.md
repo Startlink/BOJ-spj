@@ -17,7 +17,6 @@ int main(int agrc, char **argv){
 ```
 
 Pull Request를 이용해서 보내주세요.
-
 첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
  
 ## 문제 목록
@@ -28,8 +27,7 @@ Pull Request를 이용해서 보내주세요.
 * [City Tour](https://www.acmicpc.net/problem/8038)
 * [Mirror Trap](https://www.acmicpc.net/problem/7972)
 * [Sophie](https://www.acmicpc.net/problem/8137)
-* [The Postman](https://www.acmicpc.net/problem/8130)
-* [Rock Garden](https://www.acmicpc.net/problem/8144)
+* [The Postman](https://www.acmicpc.net/problem/8130)* [Rock Garden](https://www.acmicpc.net/problem/8144)
 * [Railway](https://www.acmicpc.net/problem/8147)
 * [Building Blocks](https://www.acmicpc.net/problem/8151)
 * [Gas Pipelines](https://www.acmicpc.net/problem/8148)
@@ -90,4 +88,8 @@ Pull Request를 이용해서 보내주세요.
 * [Technology Planning (Small2)](https://www.acmicpc.net/problem/12414)
 * [House of Kittens (Small)](https://www.acmicpc.net/problem/12501)
 * [House of Kittens (Large)](https://www.acmicpc.net/problem/12502)
+* [Pareto](https://www.acmicpc.net/problem/14410)
+* [Strelice](https://www.acmicpc.net/problem/14414)
+* [Prosječni](https://www.acmicpc.net/problem/13720)
+* [Rekonstruiraj](https://www.acmicpc.net/problem/14212)
 * [Basic wall maze](https://www.acmicpc.net/problem/6519)
