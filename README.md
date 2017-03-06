@@ -94,3 +94,5 @@ Pull Request를 이용해서 보내주세요.
 * [Strelice](https://www.acmicpc.net/problem/14414)
 * [Prosječni](https://www.acmicpc.net/problem/13720)
 * [Rekonstruiraj](https://www.acmicpc.net/problem/14212)
+* [Triangle Areas (Small)](https://www.acmicpc.net/problem/12705)
+* [Triangle Areas (Large)](https://www.acmicpc.net/problem/12706)
