@@ -107,3 +107,5 @@ Pull Request를 이용해서 보내주세요.
 * [Slides! (Large)](https://www.acmicpc.net/problem/14366)
 * [Fashion Police (Small)](https://www.acmicpc.net/problem/14367)
 * [Fashion Police (Large)](https://www.acmicpc.net/problem/14368)
+* [Coin Jam (Small)])(https://www.acmicpc.net/problem/14385)
+* [Coin Jam (Large)])(https://www.acmicpc.net/problem/14386)
