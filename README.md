@@ -56,7 +56,6 @@ Pull Request를 이용해서 보내주세요.
 * [Warehouse Store](https://www.acmicpc.net/problem/8234)
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
-* [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Crushing Confections](https://www.acmicpc.net/problem/11343)
 * [Fast Food](https://www.acmicpc.net/problem/6309)
 * [It Prefokery Pio](https://www.acmicpc.net/problem/13841)
