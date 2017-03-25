@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<int, int> pi;
+typedef long long lint;
 
 int n;
 vector<lint> v;
