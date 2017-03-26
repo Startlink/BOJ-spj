@@ -111,3 +111,4 @@ Pull Request를 이용해서 보내주세요.
 * [Coin Jam (Large)])(https://www.acmicpc.net/problem/14386)
 * [Fractiles (Small)](https://www.acmicpc.net/problem/14387)
 * [Fractiles (Large)](https://www.acmicpc.net/problem/14388)
+* [Basic wall maze](https://www.acmicpc.net/problem/6519)
