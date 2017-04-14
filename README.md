@@ -105,4 +105,7 @@ Pull Request를 이용해서 보내주세요.
 * [Fractiles (Large)](https://www.acmicpc.net/problem/14388)
 * [Basic wall maze](https://www.acmicpc.net/problem/6519)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
+* [Uzastopni](https://www.acmicpc.net/problem/12116)
+* [Paralelogrami](https://www.acmicpc.net/problem/14415)
+* [Odd Opportunities](https://www.acmicpc.net/problem/6637)
 * [Pushing Boxes](https://www.acmicpc.net/problem/6316)
