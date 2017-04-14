@@ -37,9 +37,9 @@ int main(int agrc, char **agrv){
 	for(int i=0; i<n; i++){
 		assert(str[p][i] == '.');
 		if(dx[i]){
-			p = min(p-1, 0);
+			p = max(p-1, 0);
 		}
-		else p = max(p+1, 0);
+		else p = min(p+1, 9);
 	}
 	return 0;
 }
