@@ -88,8 +88,6 @@ Pull Request를 이용해서 보내주세요.
 * [Strelice](https://www.acmicpc.net/problem/14414)
 * [Prosječni](https://www.acmicpc.net/problem/13720)
 * [Rekonstruiraj](https://www.acmicpc.net/problem/14212)
-* [Triangle Areas (Small)](https://www.acmicpc.net/problem/12705)
-* [Triangle Areas (Large)](https://www.acmicpc.net/problem/12706)
 * [Alice in Foxland](https://www.acmicpc.net/problem/13831)
 * [Go++ (Small)])(https://www.acmicpc.net/problem/14353)
 * [Go++ (Large)])(https://www.acmicpc.net/problem/14354)
@@ -110,3 +108,4 @@ Pull Request를 이용해서 보내주세요.
 * [Uzastopni](https://www.acmicpc.net/problem/12116)
 * [Paralelogrami](https://www.acmicpc.net/problem/14415)
 * [Odd Opportunities](https://www.acmicpc.net/problem/6637)
+* [Pushing Boxes](https://www.acmicpc.net/problem/6316)
