@@ -10,6 +10,15 @@ const char dirc[8] = {'n', 'e', 's', 'w', 'N', 'E', 'S', 'W'};
 const int MAX_CASES_DIGITS = 100;
 const char IMPOSSIBLE_STR[12] = "Impossible.";
 
+void assert_close(FILE *in, FILE *sol, FILE *out, bool val){
+	if(!val){
+		fclose(in);
+		fclose(sol);
+		fclose(out);
+		assert(false);
+	}
+}
+
 int main(int argc, char **argv){
     FILE *in = fopen(argv[1], "r"); // 입력
     FILE *sol = fopen(argv[2], "r"); // 대회 공식 해답
@@ -22,7 +31,7 @@ int main(int argc, char **argv){
 
 		// 빈 줄 하나로 테스트 케이스를 구분
 		if(t > 1){
-			assert(fgetc(out) == '\n');
+			assert_close(in, sol, out, fgetc(out) == '\n');
 			fgetc(sol);
 		}
 
@@ -53,17 +62,17 @@ int main(int argc, char **argv){
 			c1 = fgetc(sol);
 			c2 = fgetc(out);
 			if(c2 == '\n') break;
-			assert(c1 == c2);
+			assert_close(in, sol, out, c1 == c2);
 		}
 
 		// Impossible인지 먼저 테스트한다.
 		c1 = fgetc(sol);
 		if(c1 == 'I'){
 			for(int i=0; i<strlen(IMPOSSIBLE_STR); i++){
-				assert(fgetc(out) == IMPOSSIBLE_STR[i]);
+				assert_close(in, sol, out, fgetc(out) == IMPOSSIBLE_STR[i]);
 				fgetc(sol);
 			}
-			assert(fgetc(out) == '\n');
+			assert_close(in, sol, out, fgetc(out) == '\n');
 		}
 		// Impossible이 아닌 경우:
 		else{
@@ -74,12 +83,12 @@ int main(int argc, char **argv){
 				cntSol[isupper(c1)]++;
 			}while((c1 = fgetc(sol)) != '\n');
 			while((c2 = fgetc(out)) != '\n'){
-				assert(isalpha(c2));
+				assert_close(in, sol, out, isalpha(c2));
 				cntOut[isupper(c2)]++;
 				path.push_back(c2);
 			}
 			for(int i=0; i<2; i++)
-				assert(cntSol[i] == cntOut[i]);
+				assert_close(in, sol, out, cntSol[i] == cntOut[i]);
 
 			// path가 valid한지 체크한다.
 			int pr = sr, pc = sc, br = sbr, bc = sbc;
@@ -87,21 +96,21 @@ int main(int argc, char **argv){
 				int ci;
 				for(ci=0; ci<8; ci++)
 					if(dirc[ci] == c) break;
-				assert(ci != 8); // 이상한 문자
+				assert_close(in, sol, out, ci != 8); // 이상한 문자
 
 				bool pushed = ci/4;
 				int d = ci%4;
 				int nr = pr+roff[d], nc = pc+coff[d];
 				int nbr = br, nbc = bc;
-				assert(nr >= 0 && nr < R && nc >= 0 && nc < C);
-				assert(map[nr][nc] != '#');
+				assert_close(in, sol, out, nr >= 0 && nr < R && nc >= 0 && nc < C);
+				assert_close(in, sol, out, map[nr][nc] != '#');
 				// 대문자: 상자를 옮겨야 함
 				if(pushed){
-					assert(nr == br && nc == bc);
+					assert_close(in, sol, out, nr == br && nc == bc);
 					nbr += roff[d];
 					nbc += coff[d];
-					assert(nbr >= 0 && nbr < R && nbc >= 0 && nbc < C);
-					assert(map[nbr][nbc] != '#');
+					assert_close(in, sol, out, nbr >= 0 && nbr < R && nbc >= 0 && nbc < C);
+					assert_close(in, sol, out, map[nbr][nbc] != '#');
 				}
 				pr = nr;
 				pc = nc;
@@ -109,7 +118,7 @@ int main(int argc, char **argv){
 				bc = nbc;
 			}
 			// 최종적으로 상자가 T에 있어야 함
-			assert(br == dr && bc == dc);
+			assert_close(in, sol, out, br == dr && bc == dc);
 		}
 	}
 }
