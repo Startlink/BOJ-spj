@@ -15,9 +15,9 @@ typedef long long ll;
 const ll INF = 1034567891;
 ll dis[105][105];
 int main(int agrc, char **argv) {
-	FILE *in = fopen("input.txt", "r");
-	FILE *sol = fopen("solution.txt", "r");
-	FILE *out = fopen("output.txt", "r");
+	FILE *in = fopen(argv[1], "r");
+	FILE *sol = fopen(argv[2], "r");
+	FILE *out = fopen(argv[3], "r");
 
 	int N, M, D, i, j, t1, t2, t3;
 	fscanf(in, "%d %d", &N, &M);
