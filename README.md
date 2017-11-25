@@ -94,4 +94,3 @@ Pull Request를 이용해서 보내주세요.
 * [Son of Pipe Stream](https://www.acmicpc.net/problem/14642)
 * [Hokej](https://www.acmicpc.net/problem/14966)
 * [Treetop Walkway](https://www.acmicpc.net/problem/14987)
-* [Skiing](https://www.acmicpc.net/problem/15209)
