@@ -95,3 +95,4 @@ Pull Request를 이용해서 보내주세요.
 * [Hokej](https://www.acmicpc.net/problem/14966)
 * [Treetop Walkway](https://www.acmicpc.net/problem/14987)
 * [Who needs 8 Queens when you can have N?](https://www.acmicpc.net/problem/9175)
+* [Election Frenzy](https://www.acmicpc.net/problem/15171)
