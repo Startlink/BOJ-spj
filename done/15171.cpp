@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
 	fclose(in);
 
 	fscanf(sol, "%s", ans);
-	assert(fgets(str + 1, 200048, out) != NULL);
+    assert(fscanf(out, "%200010s", str+1) == 1);
 	assert(fscanf(out, "%s", u) == EOF);
 	fclose(sol);
 	fclose(out);
