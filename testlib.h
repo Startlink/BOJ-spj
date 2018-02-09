@@ -22,10 +22,10 @@
 #define _TESTLIB_H_
 
 /*
- * Copyright (c) 2005-2017
+ * Copyright (c) 2005-2018
  */
 
-#define VERSION "0.9.12"
+#define VERSION "0.9.15"
 
 /* 
  * Mike Mirzayanov
@@ -63,6 +63,7 @@
  */
 
 const char* latestFeatures[] = {
+                          "Fixed compilation in VS 2015+",
                           "Introduced space-separated read functions: readWords/readTokens, multilines read functions: readStrings/readLines",
                           "Introduced space-separated read functions: readInts/readIntegers/readLongs/readUnsignedLongs/readDoubles/readReals/readStrictDoubles/readStrictReals",
                           "Introduced split/tokenize functions to separate string by given char",
@@ -118,7 +119,8 @@ const char* latestFeatures[] = {
                           "Added \'ensure(condition, message = \"\")\' feature, it works like assert()",
                           "Fixed compatibility with MS C++ 7.1",
                           "Added footer with exit code information",
-                          "Added compatibility with EJUDGE (compile with EJUDGE directive)"
+                          "Added compatibility with EJUDGE (compile with EJUDGE directive)",
+                          "Added compatibility with Contester (compile with CONTESTER directive)"
                          };
 
 #ifdef _MSC_VER
@@ -149,7 +151,7 @@ const char* latestFeatures[] = {
 #include <stdarg.h>
 #include <fcntl.h>
 
-#if ( _WIN32 || __WIN32__ || _WIN64 || __WIN64__ )
+#if ( _WIN32 || __WIN32__ || _WIN64 || __WIN64__ || __CYGWIN__ )
 #   if !defined(_MSC_VER) || _MSC_VER>1400
 #       define NOMINMAX 1
 #       include <windows.h>
@@ -161,6 +163,11 @@ const char* latestFeatures[] = {
 #   define ON_WINDOWS
 #else
 #   define WORD unsigned short
+#   include <unistd.h>
+#endif
+
+#if defined(FOR_WINDOWS) && defined(FOR_LINUX)
+#error Only one target system is allowed
 #endif
 
 #ifndef LLONG_MIN
@@ -178,12 +185,18 @@ const char* latestFeatures[] = {
 #define EOFC (255)
 
 #ifndef OK_EXIT_CODE
-#   define OK_EXIT_CODE 0
+#   ifdef CONTESTER
+#       define OK_EXIT_CODE 0xAC
+#   else
+#       define OK_EXIT_CODE 0
+#   endif
 #endif
 
 #ifndef WA_EXIT_CODE
 #   ifdef EJUDGE
 #       define WA_EXIT_CODE 5
+#   elif defined(CONTESTER)
+#       define WA_EXIT_CODE 0xAB
 #   else
 #       define WA_EXIT_CODE 1
 #   endif
@@ -192,6 +205,8 @@ const char* latestFeatures[] = {
 #ifndef PE_EXIT_CODE
 #   ifdef EJUDGE
 #       define PE_EXIT_CODE 4
+#   elif defined(CONTESTER)
+#       define PE_EXIT_CODE 0xAA
 #   else
 #       define PE_EXIT_CODE 2
 #   endif
@@ -200,6 +215,8 @@ const char* latestFeatures[] = {
 #ifndef FAIL_EXIT_CODE
 #   ifdef EJUDGE
 #       define FAIL_EXIT_CODE 6
+#   elif defined(CONTESTER)
+#       define FAIL_EXIT_CODE 0xA3
 #   else
 #       define FAIL_EXIT_CODE 3
 #   endif
@@ -313,7 +330,7 @@ std::string format(const char* fmt, ...)
     return result;
 }
 
-std::string format(const std::string& fmt, ...)
+std::string format(const std::string fmt, ...)
 {
     FMT_TO_RESULT(fmt, fmt.c_str(), result);
     return result;
@@ -329,7 +346,7 @@ static bool __testlib_isNaN(double r)
     std::memcpy((void*)&llr1, (void*)&ra, sizeof(double)); 
     ra = -ra;
     std::memcpy((void*)&llr2, (void*)&ra, sizeof(double)); 
-    long long llnan = 0xFFF8000000000000;
+    long long llnan = 0xFFF8000000000000LL;
     return __testlib_prelimIsNaN(r) || llnan == llr1 || llnan == llr2;
 }
 
@@ -337,7 +354,7 @@ static double __testlib_nan()
 {
     __TESTLIB_STATIC_ASSERT(sizeof(double) == sizeof(long long));
 #ifndef NAN
-    long long llnan = 0xFFF8000000000000;
+    long long llnan = 0xFFF8000000000000LL;
     double nan;
     std::memcpy(&nan, &llnan, sizeof(double));
     return nan;
@@ -409,8 +426,10 @@ inline double doubleDelta(double expected, double result)
         return absolute;
 }
 
+#if !defined(_MSC_VER) || _MSC_VER<1900
 #ifndef _fileno
 #define _fileno(_stream)  ((_stream)->_file)
+#endif
 #endif
 
 #ifndef O_BINARY
@@ -2211,7 +2230,7 @@ void InStream::textColor(
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(handle, color);
 #endif
-#if !defined(ON_WINDOWS) && defined(__CNUC__)
+#if !defined(ON_WINDOWS) && defined(__GNUC__)
     if (isatty(2))
     {
         switch (color)
@@ -3298,7 +3317,7 @@ bool InStream::eoln()
     {
         bool returnCr = false;
 
-#ifdef ON_WINDOWS
+#if (defined(ON_WINDOWS) && !defined(FOR_LINUX)) || defined(FOR_WINDOWS)
         if (c != CR)
         {
             reader->unreadChar(c);
@@ -3365,17 +3384,23 @@ void InStream::readStringTo(std::string& result)
         quit(_pe, "Expected line");
 
     result.clear();
-    int cur;
 
     for (;;)
     {
-        cur = reader->curChar();
+        int cur = reader->curChar();
 
-        if (isEoln(cur))
+        if (cur == LF || cur == EOFC)
             break;
 
-        if (cur == EOFC)
-            break;
+        if (cur == CR)
+        {
+            cur = reader->nextChar();
+            if (reader->curChar() == LF)
+            {
+                reader->unreadChar(cur);
+                break;
+            }
+        }
 
         result += char(reader->nextChar());
     }
@@ -3598,7 +3623,7 @@ NORETURN void __testlib_help()
 {
     InStream::textColor(InStream::LightCyan);
     std::fprintf(stderr, "TESTLIB %s, http://code.google.com/p/testlib/ ", VERSION);
-    std::fprintf(stderr, "by Mike Mirzayanov, copyright(c) 2005-2017\n");
+    std::fprintf(stderr, "by Mike Mirzayanov, copyright(c) 2005-2018\n");
     std::fprintf(stderr, "Checker name: \"%s\"\n", checkerName.c_str());
     InStream::textColor(InStream::LightGray);
 
@@ -3657,10 +3682,14 @@ void registerGen(int argc, char* argv[])
 }
 #else
 #ifdef __GNUC__
+#if (__GNUC__ > 4) || ((__GNUC__ == 4) && (__GNUC_MINOR__ > 4))
     __attribute__ ((deprecated("Use registerGen(argc, argv, 0) or registerGen(argc, argv, 1)."
             " The third parameter stands for the random generator version."
             " If you are trying to compile old generator use macro -DUSE_RND_AS_BEFORE_087 or registerGen(argc, argv, 0)."
             " Version 1 has been released on Spring, 2013. Use it to write new generators.")))
+#else
+    __attribute__ ((deprecated))
+#endif
 #endif
 #ifdef _MSC_VER
     __declspec(deprecated("Use registerGen(argc, argv, 0) or registerGen(argc, argv, 1)."
@@ -3868,6 +3897,9 @@ static inline void __testlib_ensure(bool cond, const std::string& msg)
         quit(_fail, msg.c_str());
 }
 
+#ifdef __GNUC__
+    __attribute__((unused)) 
+#endif
 static inline void __testlib_ensure(bool cond, const char* msg)
 {
     if (!cond)
@@ -3919,7 +3951,7 @@ void shuffle(_RandomAccessIter __first, _RandomAccessIter __last)
 
 
 template<typename _RandomAccessIter>
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 __attribute__ ((error("Don't use random_shuffle(), use shuffle() instead")))
 #endif
 void random_shuffle(_RandomAccessIter , _RandomAccessIter )
@@ -3933,7 +3965,7 @@ void random_shuffle(_RandomAccessIter , _RandomAccessIter )
 #  define RAND_THROW_STATEMENT
 #endif
 
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 __attribute__ ((error("Don't use rand(), use rnd.next() instead")))
 #endif
 #ifdef _MSC_VER
@@ -3947,7 +3979,7 @@ int rand() RAND_THROW_STATEMENT
     //throw "Don't use rand(), use rnd.next() instead";
 }
 
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 __attribute__ ((error("Don't use srand(), you should use " 
         "'registerGen(argc, argv, 1);' to initialize generator seed "
         "by hash code of the command line params. The third parameter "
