@@ -98,3 +98,4 @@ Pull Request를 이용해서 보내주세요.
 * [Election Frenzy](https://www.acmicpc.net/problem/15171)
 * [Jousting Tournament](https://www.acmicpc.net/problem/15164)
 * [Trapezi](https://www.acmicpc.net/problem/14520)
+* [Pick up sticks](https://www.acmicpc.net/problem/4175)
