@@ -90,7 +90,6 @@ Pull Request를 이용해서 보내주세요.
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Paralelogrami](https://www.acmicpc.net/problem/14415)
 * [Odd Opportunities](https://www.acmicpc.net/problem/6637)
-* [Pushing Boxes](https://www.acmicpc.net/problem/6316)
 * [Son of Pipe Stream](https://www.acmicpc.net/problem/14642)
 * [Hokej](https://www.acmicpc.net/problem/14966)
 * [Treetop Walkway](https://www.acmicpc.net/problem/14987)
