@@ -79,7 +79,6 @@ void judge(int caseNumber)
 
 int main(int argc, char* argv[])
 {
-    swap(argv[2], argv[3]);
     registerTestlibCmd(argc, argv);
 
     int T = inf.readInt();
