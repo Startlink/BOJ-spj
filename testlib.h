@@ -3831,7 +3831,8 @@ void registerTestlibCmd(int argc, char* argv[])
 
     if (argc > 1 && !strcmp("--help", argv[1]))
         __testlib_help();
-
+    
+    /*
     if (argc < 4 || argc > 6)
     {
         quit(_fail, std::string("Program must be run with the following arguments: ") +
@@ -3863,11 +3864,11 @@ void registerTestlibCmd(int argc, char* argv[])
             resultName = argv[4];
             appesMode = true;
         }
-    }
+    }*/
 
     inf.init(argv[1], _input);
-    ouf.init(argv[2], _output);
-    ans.init(argv[3], _answer);
+    ouf.init(argv[3], _output);
+    ans.init(argv[2], _answer);
 }
 
 void registerTestlib(int argc, ...)
