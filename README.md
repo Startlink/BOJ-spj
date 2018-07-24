@@ -8,7 +8,7 @@
 #include <cstdio>
 #include <cassert>
 using namespace std;
-int main(int agrc, char **argv){
+int main(int argc, char **argv){
     FILE *in = fopen(argv[1],"r");
     FILE *sol = fopen(argv[2],"r");
     FILE *out = fopen(argv[3],"r");
@@ -17,6 +17,12 @@ int main(int agrc, char **argv){
 ```
 
 Pull Request를 이용해서 보내주세요.
+
+* `argv[1]`: 입력 파일의 경로 (데이터 입력)
+* `argv[2]`: 출력 파일의 경로 (데이터 출력)
+* `argv[3]`: 유저가 출력한 파일의 경로 (유저의 출력)
+* `argv[4]`: 채점 번호
+* 채점 프로그램의 업데이트로 `argv[5]` 이상을 사용할 수도 있기 때문에, `argc`의 개수를 검사하면 안됩니다.
 
 첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
 
