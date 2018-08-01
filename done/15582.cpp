@@ -65,6 +65,7 @@ int main(int agrc, char **agrv){
         int yans[105];
         for(int i=1;i<=n;i++) {
             assert(fscanf(out,"%d",&yans[i])==1);
+            assert(1<=yans[i] && yans[i]<=m);
         }
         for(int i=1;i<=n;i++) {
             assert(getdis(S[i] , B[yans[i]]) <= ans);
