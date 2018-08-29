@@ -95,7 +95,6 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Coin Jam (Large)](https://www.acmicpc.net/problem/14386)
 * [Fractiles (Small)](https://www.acmicpc.net/problem/14387)
 * [Fractiles (Large)](https://www.acmicpc.net/problem/14388)
-* [Basic wall maze](https://www.acmicpc.net/problem/6519)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Paralelogrami](https://www.acmicpc.net/problem/14415)
 * [Odd Opportunities](https://www.acmicpc.net/problem/6637)
