@@ -53,7 +53,12 @@ int main(int agrc, char **agrv){
         int endX = read_int(in) * 2 - 1;
         int endY = read_int(in) * 2 - 1;
 
-        bool map[13][13] = { 0, };
+        bool map[13][13];
+        for (int i=0; i<13; i++) {
+            for (int j=0; j<13; j++) {
+                map[i][j] = false;
+            }
+        }
         for (int i = 0; i < 3; i++) {
             int sx = read_int(in) * 2;
             int sy = read_int(in) * 2;
@@ -110,7 +115,7 @@ int main(int agrc, char **agrv){
         assert(y == endY && x == endX);
     }
 
-    assert(fscanf(out, "%10000[^\n]\n", buffer) == -1);
+    assert_eof(out);
 
     fclose(in);
     fclose(sol);
