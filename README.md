@@ -110,3 +110,4 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Towers](https://www.acmicpc.net/problem/10567)
 * [Stable Neigh-bors (Small)](https://www.acmicpc.net/problem/14805)
 * [Stable Neigh-bors (Large)](https://www.acmicpc.net/problem/14806)
+* [Drawing Borders](https://www.acmicpc.net/problem/16051)
