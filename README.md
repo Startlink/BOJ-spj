@@ -16,7 +16,7 @@ int main(int argc, char **argv){
 }
 ```
 
-Pull Request를 이용해서 보내주세요.
+작성한 스페셜 저지 파일을 프로젝트 루트에 넣은 다음, Pull Request를 이용해서 보내주세요.
 
 * `argv[1]`: 입력 파일의 경로 (데이터 입력)
 * `argv[2]`: 출력 파일의 경로 (데이터 출력)
@@ -32,7 +32,7 @@ Pull Request를 이용해서 보내주세요.
 
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
  
-## 문제 목록
+## 구현해야 하는 문제 목록
 
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
