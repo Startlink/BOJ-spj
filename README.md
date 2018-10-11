@@ -8,7 +8,7 @@
 #include <cstdio>
 #include <cassert>
 using namespace std;
-int main(int agrc, char **argv){
+int main(int argc, char **argv){
     FILE *in = fopen(argv[1],"r");
     FILE *sol = fopen(argv[2],"r");
     FILE *out = fopen(argv[3],"r");
@@ -16,11 +16,23 @@ int main(int agrc, char **argv){
 }
 ```
 
-Pull Request를 이용해서 보내주세요.
+작성한 스페셜 저지 파일을 프로젝트 루트에 넣은 다음, Pull Request를 이용해서 보내주세요.
+
+* `argv[1]`: 입력 파일의 경로 (데이터 입력)
+* `argv[2]`: 출력 파일의 경로 (데이터 출력)
+* `argv[3]`: 유저가 출력한 파일의 경로 (유저의 출력)
+* `argv[4]`: 채점 번호
+* 채점 프로그램의 업데이트로 `argv[5]` 이상을 사용할 수도 있기 때문에, `argc`의 개수를 검사하면 안됩니다.
 
 첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
+
+[spj.cpp](https://github.com/Startlink/BOJ-spj/blob/master/spj.cpp)를 이용해서 구현한 스페셜 저지 코드는 [2051.cpp](https://github.com/Startlink/BOJ-spj/blob/master/2051.cpp) 입니다. 이 코드는 [2051번: 최소 버텍스 커버](https://www.acmicpc.net/problem/2051)을 채점하는 소스입니다.
+
+`testlib.h`를 사용하고 싶은 경우에는 첨부되어 있는 [testlib.h](https://github.com/Startlink/BOJ-spj/blob/master/testlib.h)를 이용해 주세요.
+
+Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
  
-## 문제 목록
+## 구현해야 하는 문제 목록
 
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
@@ -41,7 +53,6 @@ Pull Request를 이용해서 보내주세요.
 * [Ticket Inspector](https://www.acmicpc.net/problem/8176)
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
-* [Crushing Confections](https://www.acmicpc.net/problem/11343)
 * [Fast Food](https://www.acmicpc.net/problem/6309)
 * [It Prefokery Pio](https://www.acmicpc.net/problem/13841)
 * [Restriction Enzyme](https://www.acmicpc.net/problem/13843)
@@ -76,19 +87,15 @@ Pull Request를 이용해서 보내주세요.
 * [Go++ (Large)](https://www.acmicpc.net/problem/14354)
 * [The Gardener of Seville (Small)](https://www.acmicpc.net/problem/14359)
 * [The Gardener of Seville (Large)](https://www.acmicpc.net/problem/14360)
-* [Senate Evacuation (Small)](https://www.acmicpc.net/problem/14363)
-* [Senate Evacuation (Large)](https://www.acmicpc.net/problem/14364)
 * [Slides! (Small)](https://www.acmicpc.net/problem/14365)
 * [Slides! (Large)](https://www.acmicpc.net/problem/14366)
 * [Fashion Police (Small)](https://www.acmicpc.net/problem/14367)
 * [Fashion Police (Large)](https://www.acmicpc.net/problem/14368)
 * [Fractiles (Small)](https://www.acmicpc.net/problem/14387)
 * [Fractiles (Large)](https://www.acmicpc.net/problem/14388)
-* [Basic wall maze](https://www.acmicpc.net/problem/6519)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Paralelogrami](https://www.acmicpc.net/problem/14415)
 * [Odd Opportunities](https://www.acmicpc.net/problem/6637)
-* [Pushing Boxes](https://www.acmicpc.net/problem/6316)
 * [Son of Pipe Stream](https://www.acmicpc.net/problem/14642)
 * [Hokej](https://www.acmicpc.net/problem/14966)
 * [Treetop Walkway](https://www.acmicpc.net/problem/14987)
@@ -96,3 +103,10 @@ Pull Request를 이용해서 보내주세요.
 * [Election Frenzy](https://www.acmicpc.net/problem/15171)
 * [Jousting Tournament](https://www.acmicpc.net/problem/15164)
 * [Pick up sticks](https://www.acmicpc.net/problem/4175)
+* [Bukazoids](https://www.acmicpc.net/problem/7492)
+* [Towers](https://www.acmicpc.net/problem/10567)
+* [Stable Neigh-bors (Small)](https://www.acmicpc.net/problem/14805)
+* [Stable Neigh-bors (Large)](https://www.acmicpc.net/problem/14806)
+* [Drawing Borders](https://www.acmicpc.net/problem/16051)
+* [Last Casino](https://www.acmicpc.net/problem/16111)
+* [완전히 다양화 된 수열](https://www.acmicpc.net/2772)
