@@ -33,9 +33,8 @@ int main(int argc, char **argv){
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
  
 ## 구현해야 하는 문제 목록
-
+* [Intelligence Quotient](https://www.acmicpc.net/problem/7914)
 * [Minuses](https://www.acmicpc.net/problem/8021)
-* [Peaceful Comission](https://www.acmicpc.net/problem/8032)
 * [Balance](https://www.acmicpc.net/problem/8023)
 * [City Tour](https://www.acmicpc.net/problem/8038)
 * [Mirror Trap](https://www.acmicpc.net/problem/7972)
@@ -49,7 +48,6 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Toll](https://www.acmicpc.net/problem/8153)
 * [Building blocks](https://www.acmicpc.net/problem/8154)
 * [Mirror trap](https://www.acmicpc.net/problem/8157)
-* [The Walk of Bytie-boy](https://www.acmicpc.net/problem/8175)
 * [Ticket Inspector](https://www.acmicpc.net/problem/8176)
 * [Primonimo](https://www.acmicpc.net/problem/13296)
 * [Chocolate Eating](https://www.acmicpc.net/problem/6029)
