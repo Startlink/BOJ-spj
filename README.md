@@ -2,7 +2,7 @@
 
 아래 문제의 스페셜 저지를 만들어 주세요. 문제 목록은 제일 아래에 있습니다.
 
-스페셜 저지는 아래 템플릿를 이용해서 만들면 됩니다.
+스페셜 저지는 아래 템플릿를 이용해서 만들어 주세요.
 
 ```
 #include <cstdio>
@@ -16,7 +16,7 @@ int main(int argc, char **argv){
 }
 ```
 
-작성한 스페셜 저지 파일을 프로젝트 루트에 넣은 다음, Pull Request를 이용해서 보내주세요.
+작성한 스페셜 저지 파일을 **프로젝트 루트**에 넣은 다음, Pull Request를 이용해서 보내주세요.
 
 * `argv[1]`: 입력 파일의 경로 (데이터 입력)
 * `argv[2]`: 출력 파일의 경로 (데이터 출력)
@@ -31,8 +31,8 @@ int main(int argc, char **argv){
 `testlib.h`를 사용하고 싶은 경우에는 첨부되어 있는 [testlib.h](https://github.com/Startlink/BOJ-spj/blob/master/testlib.h)를 이용해 주세요.
 
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
- 
-## 구현해야 하는 문제 목록
+
+## 구현해야 하는 문제 목록 (일부)
 
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
@@ -93,8 +93,6 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Fashion Police (Large)](https://www.acmicpc.net/problem/14368)
 * [Coin Jam (Small)](https://www.acmicpc.net/problem/14385)
 * [Coin Jam (Large)](https://www.acmicpc.net/problem/14386)
-* [Fractiles (Small)](https://www.acmicpc.net/problem/14387)
-* [Fractiles (Large)](https://www.acmicpc.net/problem/14388)
 * [Jetpack](https://www.acmicpc.net/problem/13485)
 * [Paralelogrami](https://www.acmicpc.net/problem/14415)
 * [Odd Opportunities](https://www.acmicpc.net/problem/6637)
@@ -108,8 +106,6 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Pick up sticks](https://www.acmicpc.net/problem/4175)
 * [Bukazoids](https://www.acmicpc.net/problem/7492)
 * [Towers](https://www.acmicpc.net/problem/10567)
-* [Stable Neigh-bors (Small)](https://www.acmicpc.net/problem/14805)
-* [Stable Neigh-bors (Large)](https://www.acmicpc.net/problem/14806)
 * [Drawing Borders](https://www.acmicpc.net/problem/16051)
 * [Last Casino](https://www.acmicpc.net/problem/16111)
 * [완전히 다양화 된 수열](https://www.acmicpc.net/2772)
