@@ -31,7 +31,7 @@ int main(int argc, char **argv){
 `testlib.h`를 사용하고 싶은 경우에는 첨부되어 있는 [testlib.h](https://github.com/Startlink/BOJ-spj/blob/master/testlib.h)를 이용해 주세요.
 
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
- 
+
 ## 구현해야 하는 문제 목록
 * [Intelligence Quotient](https://www.acmicpc.net/problem/7914)
 * [Minuses](https://www.acmicpc.net/problem/8021)
@@ -103,8 +103,6 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Pick up sticks](https://www.acmicpc.net/problem/4175)
 * [Bukazoids](https://www.acmicpc.net/problem/7492)
 * [Towers](https://www.acmicpc.net/problem/10567)
-* [Stable Neigh-bors (Small)](https://www.acmicpc.net/problem/14805)
-* [Stable Neigh-bors (Large)](https://www.acmicpc.net/problem/14806)
 * [Drawing Borders](https://www.acmicpc.net/problem/16051)
 * [Last Casino](https://www.acmicpc.net/problem/16111)
 * [완전히 다양화 된 수열](https://www.acmicpc.net/2772)
