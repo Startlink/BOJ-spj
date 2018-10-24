@@ -32,7 +32,7 @@ int main(int argc, char **argv){
 
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
 
-## 구현해야 하는 문제 목록
+## 구현해야 하는 문제 목록 (일부)
 
 * [Minuses](https://www.acmicpc.net/problem/8021)
 * [Peaceful Comission](https://www.acmicpc.net/problem/8032)
