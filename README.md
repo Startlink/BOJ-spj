@@ -24,9 +24,9 @@ int main(int argc, char **argv){
 * `argv[4]`: 채점 번호
 * 채점 프로그램의 업데이트로 `argv[5]` 이상을 사용할 수도 있기 때문에, `argc`의 개수를 검사하면 안됩니다.
 
-첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
+첨부되어 있는 [12852.cpp](https://github.com/Startlink/BOJ-spj/blob/master/sample/12852.cpp)는 [12852번: 1로 만들기 2](https://www.acmicpc.net/problem/12852)의 채점 소스입니다.
 
-[spj.cpp](https://github.com/Startlink/BOJ-spj/blob/master/spj.cpp)를 이용해서 구현한 스페셜 저지 코드는 [2051.cpp](https://github.com/Startlink/BOJ-spj/blob/master/2051.cpp) 입니다. 이 코드는 [2051번: 최소 버텍스 커버](https://www.acmicpc.net/problem/2051)을 채점하는 소스입니다.
+[spj.cpp](https://github.com/Startlink/BOJ-spj/blob/master/spj.cpp)를 이용해서 구현한 스페셜 저지 코드는 [2051.cpp](https://github.com/Startlink/BOJ-spj/blob/master/sample/2051.cpp) 입니다. 이 코드는 [2051번: 최소 버텍스 커버](https://www.acmicpc.net/problem/2051)을 채점하는 소스입니다.
 
 `testlib.h`를 사용하고 싶은 경우에는 첨부되어 있는 [testlib.h](https://github.com/Startlink/BOJ-spj/blob/master/testlib.h)를 이용해 주세요.
 
