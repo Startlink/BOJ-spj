@@ -28,6 +28,8 @@ int main(int argc, char **argv){
 
 [spj.cpp](https://github.com/Startlink/BOJ-spj/blob/master/spj.cpp)를 이용해서 구현한 스페셜 저지 코드는 [sample/2051.cpp](https://github.com/Startlink/BOJ-spj/blob/master/sample/2051.cpp) 입니다. 이 코드는 [2051번: 최소 버텍스 커버](https://www.acmicpc.net/problem/2051)을 채점하는 소스입니다.
 
+**절대로 freopen을 사용하면 안됩니다.**
+
 `testlib.h`를 사용하고 싶은 경우에는 첨부되어 있는 [testlib.h](https://github.com/Startlink/BOJ-spj/blob/master/testlib.h)를 이용해 주세요.
 
 Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink/BOJ-spj/blob/master/Checker.java)를 이용해 주세요.
