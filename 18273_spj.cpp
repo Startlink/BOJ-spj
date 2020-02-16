@@ -44,6 +44,8 @@ int main(int agrc, char **agrv) {
 			assert(heights.find(B[i]) != heights.end());
 			heights.erase(heights.find(B[i]));
 		}
+		assert(numA > 0);
+		assert(numB > 0);
 		assert(numA + numB == N);
 		assert(heights.size() == 0);
 
