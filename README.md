@@ -110,6 +110,7 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Towers](https://www.acmicpc.net/problem/10567)
 * [Drawing Borders](https://www.acmicpc.net/problem/16051)
 * [Last Casino](https://www.acmicpc.net/problem/16111)
-* [완전히 다양화 된 수열](https://www.acmicpc.net/2772)
+* [완전히 다양화 된 수열](https://www.acmicpc.net/problem/2772)
 * [Trees Gump](https://www.acmicpc.net/problem/16698)
 * [Naan](https://www.acmicpc.net/problem/17670)
+* [Compromise](https://www.acmicpc.net/problem/6592)
