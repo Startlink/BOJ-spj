@@ -116,3 +116,4 @@ Java를 이용해서 구현하려면 [Checker.java](https://github.com/Startlink
 * [Trees Gump](https://www.acmicpc.net/problem/16698)
 * [Naan](https://www.acmicpc.net/problem/17670)
 * [Compromise](https://www.acmicpc.net/problem/6592)
+* [Jumping Junipers](https://www.acmicpc.net/problem/18819)
